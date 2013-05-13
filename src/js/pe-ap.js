@@ -1065,7 +1065,7 @@
 						linkquerylen = linkquery.length;
 						bcindex = bclinkslen;
 						while (bcindex--) {
-							if (bclinkurl[bcindex].slice(-linkurllen) === linkurl && (linkquerylen === 0 || bclink[bcindex].search.slice(-linkquerylen) === linkquery)) {
+							if (bclinkurl[bcindex] !== undefined && bclinkurl[bcindex].slice(-linkurllen) === linkurl && (linkquerylen === 0 || bclink[bcindex].search.slice(-linkquerylen) === linkquery)) {
 								match = true;
 								break;
 							}
